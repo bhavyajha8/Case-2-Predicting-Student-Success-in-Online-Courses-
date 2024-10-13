@@ -1,10 +1,6 @@
 # Case 2: Predicting Student Success in Online Courses 
 
 
-### Documentation for the Code: Predicting Student Success in Online Courses
-
----
-
 #### **Overview**
 This project aims to predict student success (i.e., whether a student will complete or drop out of a course) on an online learning platform. The project involves merging several datasets related to student profiles, engagement data, and historical performance. A classification model (Random Forest) is built to predict student completion status, and feature importance analysis is conducted to determine which factors contribute most to the outcome. The goal is to identify at-risk students and suggest interventions to help them succeed.
 
