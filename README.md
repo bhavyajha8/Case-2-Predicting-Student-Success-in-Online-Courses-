@@ -124,6 +124,7 @@ grid_search = GridSearchCV(RandomForestClassifier(random_state=42), param_grid, 
 grid_search.fit(X_train, y_train)
 best_model = grid_search.best_estimator_
 ```
+![image](https://github.com/user-attachments/assets/7b39c4d0-53b8-4144-93e7-d384e23d8cf2)
 
 ---
 
@@ -135,6 +136,8 @@ y_pred_best = best_model.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred_best))
 print("\nClassification Report:\n", classification_report(y_test, y_pred_best))
 ```
+![image](https://github.com/user-attachments/assets/960c86b6-096d-47aa-9da2-540267f7779f)
+
 
 ---
 
@@ -150,6 +153,8 @@ sns.barplot(x='importance', y='feature', data=feature_importance_df)
 plt.title('Feature Importance from Random Forest')
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/9f006c5f-5cad-44c9-8f40-2ea5d2e6bdb2)
+
 
 ---
 
@@ -161,6 +166,8 @@ cv_scores = cross_val_score(best_model, X, y, cv=5, scoring='f1')
 print("Cross-Validation F1 Scores:", cv_scores)
 print("Mean Cross-Validation F1 Score:", cv_scores.mean())
 ```
+![image](https://github.com/user-attachments/assets/785fc0f8-119e-4346-91ea-9a47a6f6b0c9)
+
 
 ---
 
@@ -228,6 +235,8 @@ print(f'MAP@3: {mapk(actual_list, predicted_list, k=3)}')
 ndcg_scores = [ndcg_at_k(actual, predicted, k=3) for actual, predicted in zip(actual_list, predicted_list)]
 print(f'NDCG@3: {np.mean(ndcg_scores)}')
 ```
+![image](https://github.com/user-attachments/assets/8bb3ba67-0473-4c84-a121-b2f89e64a3cb)
+
 
 ---
 
