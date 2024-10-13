@@ -105,6 +105,10 @@ print("Precision:", precision_score(y_test, y_pred))
 print("Recall:", recall_score(y_test, y_pred))
 print("F1 Score:", f1_score(y_test, y_pred))
 ```
+![image](https://github.com/user-attachments/assets/8f812322-c4fd-48b5-8c79-f0491f0ee60a)
+![image](https://github.com/user-attachments/assets/2e992d83-8f90-4600-bc23-d2ffbc3640c3)
+
+
 
 #### Hyperparameter Tuning:
 A grid search is used to optimize the hyperparameters of the Random Forest model:
